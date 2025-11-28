@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hyundai Showroom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset and Fonts */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: aliceblue;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px;
+    }
+
+    nav p {
+      margin: 5px 10px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    nav img {
+      width: 100px;
+      height: 80px;
+    }
+
+    nav p:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Image */
+    .hero img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    /* Title */
+    h1 {
+      text-align: center;
+      margin: 30px 0 15px;
+      font-size: 32px;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .tabs div {
+      cursor: pointer;
+      padding-bottom: 5px;
+      font-size: 16px;
+      border-bottom: 2px solid transparent;
+    }
+
+    /* .tabs .active {
+      color: #007BFF;
+      border-color: #007BFF;
+      font-weight: bold;
+    } */
+
+    /* Car Section */
+    .car-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      
+    padding: 20px;
+    }
+
+    .car-box {
+      display: flex;
+      
+      flex-direction: column;
+      align-items: center;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .car-box img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .car-info {
+      padding: 10px 0;
+    }
+
+    .car-info h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .car-info p {
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    /* Description Section */
+    .description {
+      padding: 30px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.2;
+      background: #f9f9f9;
+    }
+
+    
+    .slider {
+    align-items: left;
+    margin-left: 0%;
+      position: relative;
+      justify-items: space-between;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      transition: transform 0.5s ease;
+    }
+
+    .slide {
+      flex: 0 0 100%;
+    }
+
+    .slide img {
+      width: 40%;
+object-fit: cover;
+display:block;
+
+      
+      border-radius: 10px;
+    }
+
+    .slider-nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .slider-nav label {
+      display: inline-block;
+      background: #007BFF;
+      color: white;
+      padding: 6px 12px;
+      margin: 0 4px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #slide1:checked ~ .slides {
+      transform: translateX(0%);
+    }
+
+    #slide2:checked ~ .slides {
+      transform: translateX(-100%);
+    }
+
+    #slide3:checked ~ .slides {
+      transform: translateX(-200%);
+    }
+
+    
+    iframe {
+      display: block;
+      margin: 40px auto 20px;
+      max-width: 100%;
+      width: 1000px;
+      height: 431px;
+    }
+
+    
+    @media (max-width: 768px) {
+      .car-box {
+        max-width: 90%;
+      }
+      .slide img{
+        width:50%;
+        height: 300px;
+      }
+
+      iframe {
+        width: 100%;
+        height: auto;
+      }
+    }
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .trending-section {
+      background-color: #163172;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .trending-section h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .grid-container {
+      display: grid;
+      
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10x;
+    }
+
+    .grid-item {
+      overflow: hidden;
+
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 45%;
+      display: block;
+    }
+
+    .grid-item .caption {
+      padding: 10px;
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav>
+    <img src="./logo.jpeg" alt="Hyundai Logo">
+    <p>Find a Car</p>
+    <p>Click to Buy</p>
+    <p>Connect to Service</p>
+    <p>Hyundai Story</p>
+    <p>Mobility Solutions</p>
+    <p>Investor Relations</p>
+    <p>Contact Us</p>
+  </nav>
+
+  
+  <div class="hero">
+    <img src="./home_hycng_pc.avif" alt="Hyundai Banner">
+  </div>
+
+  
+  <h1>Hyundai Cars</h1>
+
+  
+  <div class="tabs">
+    <div class="active">All</div>
+    <div>SUV</div>
+    <div>Sedan</div>
+    <div>Hatchback</div>
+    <div>Electric</div>
+  </div>
+
+  
+  <div class="car-section">
+    <div class="car-box">
+      <img src="./niosmodelpc.avif" alt="Grand i10 NIOS">
+      <div class="car-info">
+        <h2>Grand i10 NIOS</h2>
+        <p><strong>Starting at:</strong> ₹ 5,98,300<br><small>*Ex Showroom Price</small></p>
+        <p><strong>Engine:</strong> 1.2L Kappa Petrol / Bi-Fuel (CNG)</p>
+        <p><strong>Transmission:</strong> 5-Speed Manual / AMT</p>
+      </div>
+    </div>
+
+    <div class="car-box">
+      <img src="./vernamodel2.avif" alt="Hyundai Verna">
+      <div class="car-info">
+        <h2>Hyundai VERNA</h2>
+        <p><strong>Starting at:</strong> ₹ 11,07,400<br><small>*Ex Showroom Price</small></p>
+        <p><strong>Engine:</strong> 1.5L Turbo GDI / MPI Petrol</p>
+        <p><strong>Transmission:</strong> 6-Speed Manual / IVT / 7-Speed DCT</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="description">
+    <h1>Experience Innovation with Hyundai Cars</h1>
+    <p>
+      Hyundai offers a diverse range of cars, from stylish hatchbacks and comfortable sedans to powerful SUVs.
+      Leading the way in sustainable mobility, Hyundai electric cars provide eco-friendly driving without
+      compromising on power and style. With advanced technology and cutting-edge features, Hyundai ensures a
+      superior driving experience. Explore Hyundai’s world-class vehicles and drive into the future with confidence!
+    </p>
+  </div>
+
+  
+  <div class="slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+
+    <div class="slides">
+      <div class="slide"><img src="./service-section-second-banner-pc1.avif" alt="Service 1"></div>
+      <div class="slide"><img src="./service-section-third-banner-pc2.avif" alt="Service 2"></div>
+      <div class="slide"><img src="./second-image-main-inner-kv-pc3.avif" alt="Service 3"></div>
+    </div>
+
+    <div class="slider-nav">
+      <label for="slide1">1</label>
+      <label for="slide2">2</label>
+      <label for="slide3">3</label>
+    </div>
+  </div>
+  <br>
+<section class="trending-section">
+    <h5>SOCIAL</h5>
+    <br>
+  <h2>Check out what's trending</h2>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="./whatsnewmillon11.avif" alt="Hyundai Image 1">
+      <div class="caption">Hyundai crosses 9 million units since inception.</div>
+      <br>
+      <img src="./extercngextrim12.avif" alt="Hyundai Image 1">
+      <!-- <div class="caption">Hyundai crosses 9 million units since inception.</div> -->
+    </div>
+    <div class="grid-item">
+      <img src="./evolverssocial111.avif" alt="Hyundai Image 2">
+      <div class="caption">Introducing Hyundai EXTER CNG Duo.</div>
+      <br>
+      <img src="./hyundai-service-post14.avif" alt="Hyundai Image 1">
+      <!-- <div class="caption">Hyundai crosses 9 million units since inception.</div> -->
+    </div>
+    <div class="grid-item">
+      <img src="./nitinsocial13.avif" alt="Hyundai Image 3">
+      <div class="caption">Hyundai Event with Industry Leaders.</div>
+       <br>
+      <img src="./cretaevhomepage_133.avif" alt="Hyundai Image 1">
+      <!-- <div class="caption">Hyundai crosses 9 million units since inception.</div> -->
+    </div>
+  </div>
+</section>
+  
+  <iframe src="https://www.youtube.com/embed/VzVFS6YzIVQ"
+    title="Hyundai India | 10 Years Of CRETA" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+  <h1 style="text-align:center;">10 Years of CRETA</h1>
+  <p style="text-align:center; padding: 0 20px 40px;">
+    A decade ago, Hyundai introduced not just an SUV, but a brand that would set the gold standard in India’s SUV
+    landscape. Today, CRETA is not just a name – it’s a benchmark, a movement, a market-defining force. Join us in
+    celebrating 10 iconic years of brand CRETA.
+  </p>
+
+</body>
+</html>
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP</title>
+</head>
+<style>
+    #navbarmob{
+         width: 100vw;
+        height: 9vh;
+        display: flex;
+        background-color: black;
+        color: aliceblue;
+        display:none;
+        justify-content: space-around;
+
+    }
+    @media screen and (max-width:600px){
+        #navbarmob{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    #nav{
+        width: 100vw;
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+        background-color: palevioletred;
+    }
+    #left,#right{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+
+</style>
+<body>
+    <div id="navbarmob">
+        <p>Home</p>
+        <p>Bootstrap</p>
+        <p>Search</p>
+    </div>
+    <div id="nav">
+        <div id="left">
+        <p>Docs</p>
+        <p>Examples</p>
+        <p>Icons</p>
+        <p>Themes</p>
+        <p>Blog</p>
+        </div>
+        <input type="">
+        <div id="right">
+        <p>Docs</p>
+        <p>Examples</p>
+        <p>Icons</p>
+        <p>Themes</p>
+        <p>Blog</p>
+        </div>
+     </div>
+</body>
+</html>

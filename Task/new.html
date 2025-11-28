@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #navbar {
+        width: 100vw;
+        height: 11vh;
+        background-color: rgb(8, 8, 8);
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+       #left {
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+        font-size: large;
+        align-items: center;
+    }
+    #right {
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+        font-size: large;
+        align-items: center;
+    }
+     
+        
+    
+    #navbar1 {
+        width: 100vw;
+        height: 220vh;
+        display: flex;
+        margin: 0%;
+        justify-content: space-around;
+    }
+   
+    #navbar1left {
+        width: 20%;
+        height: 100%;
+        background-color: rgb(3, 3, 86);
+        position: fixed;
+        left: 0;
+        top: 12%;
+        padding: 10px;
+    }
+    #navbar1center {
+        width: 58%;
+        height: 100%;
+        background-color: white;
+    }
+    
+    #navbar1right {
+        width: 20%;
+        height: 100%;
+        background-color: rgb(3, 3, 86);
+        position: fixed;
+        right: 0;
+        top: 12%;
+        padding: 10px;
+    } @media screen and (max-width:600px) {
+         #navbar {
+            display: flex;
+            justify-content: space-between;
+         }
+        
+</style>
+<body>
+    <div id="navbar">
+        <div id="left">
+
+            <p>Docs</p>
+            <p>Examples</p>
+            <p>Icons</p>
+            <p>Themes</p>
+            <p>Blog</p>
+        </div>
+        <input type="text" placeholder="Search" style="width: 20%;" />
+        <div id="right">
+            <p>Docs</p>
+            <p>Examples</p>
+            <p>Icons</p>
+            <p>Themes</p>
+        </div>
+    </div>
+    <div id="navbar1">
+        <div id="navbar1left">
+        </div>
+        <div id="navbar1center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, impedit. Similique soluta pariatur
+                consectetur hic optio officia corrupti, nemo, impedit dolorem fuga voluptatem sit odio suscipit atque.
+                Sunt, et obcaecati?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos, iure deleniti possimus omnis fugiat?
+                Eos facilis totam sunt necessitatibus nisi veritatis consequatur incidunt modi. Non ratione architecto
+                nisi dignissimos!</p>
+        </div>
+        <div id="navbar1right">
+</div>
+    </div>
+</body>
+</html>

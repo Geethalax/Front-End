@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hyundai</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    */ body {
+      background-color: #f2f2f2;
+      margin: 0;
+    }
+    nav {
+      background-color: aliceblue;
+      display: flex;
+
+      color: black;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10px;
+    }
+    .nav1 {
+      background-color: blue;
+      color: black;
+      align-items: center;
+      padding: 10px 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background-color: white;
+      color: #333;
+      text-align: center;
+      padding: 30px 15px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    .tabs div {
+      cursor: pointer;
+      padding-bottom: 6px;
+      border-bottom: 2px solid transparent;
+      transition: border 0.3s;
+    }
+    .tabs .active {
+      border-color: #007BFF;
+      color:b;
+      font-weight: 600;
+    } 
+.car-section {
+      display: flex;
+      justify-content: left;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .car-info {
+      max-width: 300px;
+      text-align: left;
+    }
+    .car-info h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .car-info p {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+    .car-img img {
+      width: 400px;
+      max-width: 90%;
+    }
+    .tabs {
+      flex-wrap: wrap;
+    }
+    .slider {
+      width: 100%;
+      align-items: center;
+      margin-left:0%;
+      max-width: 500px;
+      position: relative;
+
+    }
+    input[type="radio"] {
+      display: none;
+      align-items: center;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      transition: transform 0.5s ease;
+    }
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .nav {
+      text-align: center;
+      margin-top: 10px;
+      justify-content: center;
+    }
+    .slider-nav label {
+      display: inline-block;
+      background: #333;
+      color: white;
+      padding: 8px 16px;
+      margin: 0 5px;
+      cursor: pointer;      
+      text-align: center;
+      justify-content: center;
+      border-radius: 5px;
+    }
+    #slide1:checked~.slides {
+      transform: translateX(0%);
+    }
+    #slide2:checked~.slides {
+      transform: translateX(-100%);
+    }
+    #slide3:checked~.slides {
+      transform: translateX(-200%);
+    }
+  </style>
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="./logo.jpeg" width="100px" height="80px" />
+    <p>Find a Car</p>
+    <p>Click to Buy</p>
+    <p>Connect to Service</p>
+    <p>Hyundai Story</p>
+    <p>Mobility Solutions</p>
+    <p>Inverstor Relations</p>
+    <p>Contact Us</p>
+  </nav>
+  <img src="./home_hycng_pc.avif" width="1700px" height="500px">
+    <h1>Hyundai Cars</h1>
+  <div class="tabs">
+      <div class="active">All</div>
+      <div>SUV</div>
+      <div>Sedan</div>
+      <div>Hatchback</div>
+      <div>Electric</div>
+    </div>
+    <div class="car-section">
+      <div class="car-img">
+        <img src="./niosmodelpc.avif" alt="Grand i10 NIOS">
+      </div>
+      <div class="car-info">
+        <h2>Grand i10 NIOS</h2>
+        <p><strong>Starting at:</strong> ₹ 5 98 300<br><small>*Ex Showroom Price</small></p>
+        <p><strong>Engine:</strong> 1.2| Kappa Petrol / 1.2l Bi-Fuel (Petrol with CNG)</p>
+        <p><strong>Transmission:</strong> 5-Speed Manual / Smart Auto AMT</p>
+      </div>
+      <div class="car-img">
+        <img src="./vernamodel2.avif" alt="Hyundai VERNA">
+      </div>
+      <div class="car-info">
+        <h2>Hyundai VERNA</h2>
+        <p><strong>Starting at:</strong> 1107400<br><small>*Ex Showroom Price</small></p>
+        <p><strong>Engine:</strong> 1.5| Turbo GDI Petrol / 1.5 MPI Petrol Bi-Fuel (Petrol with CNG)</p>
+        <p><strong>Transmission:</strong> 6-Speed Manual & 7 Speed DCT/ Smart Auto AMT & IVT</p>
+      </div>
+    </div>
+    <h1>Experience Innovation with Hyundai Cars</h1>
+    <p>Hyundai offers a diverse range of Hyundai cars, from stylish Hyundai hatchback cars and comfortable Hyundai sedan
+      cars to powerful Hyundai SUVs cars, each designed for performance, safety, and innovation. Leading the way in
+      sustainable mobility, Hyundai electric cars provide eco-friendly driving without compromising on power and style.
+      With advanced technology, seamless connectivity, and cutting-edge safety features, Hyundai ensures a superior
+      driving experience for every journey. Explore Hyundai’s world-class vehicles and drive into the future with
+      confidence!
+    </p>
+    <br>
+    <div class="slider">
+      <input type="radio" name="slider" id="slide1" >
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+      <div class="slides">
+        <div class="slide">
+          <img src="./service-section-second-banner-pc1.avif" width="100" height="200" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="./service-section-third-banner-pc2.avif" width="100" height="200" alt="Image 2">
+        </div>
+        <div class="slide">
+          <img src="./second-image-main-inner-kv-pc3.avif" width="100" height="200" alt="Image 3">
+        </div>
+      </div>
+      <div class="slider-nav nav">
+        <label for="slide1">1</label>
+        <label for="slide2">2</label>
+        <label for="slide3">3</label>
+      </div> 
+    </div><br>
+    <iframe width="1120" height="431" src="https://www.youtube.com/embed/VzVFS6YzIVQ" title="Hyundai India | 10 Years Of CRETA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>10 Years of CRETA</h1>
+    <p>A decade ago, Hyundai introduced not just an SUV, but a brand that would set the gold standard in India’s SUV
+      landscape. Today, CRETA is not just a name it’s a benchmark, a movement, a market-defining force. Join us in
+      celebrating 10 iconic years of brand CRETA.
+    </p>
+  </body>
+</html>
